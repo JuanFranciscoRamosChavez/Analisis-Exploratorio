@@ -63,7 +63,7 @@ Para ejecutar este proyecto, se recomienda configurar un entorno virtual con **P
     pip install requirements.txt
     ```
     Si no reconoce el comando anterior comando usa el siguiente:
-        ```bash
+    ```bash
     python -m pip install -r requirements.txt
     ```
 

@@ -60,7 +60,11 @@ Para ejecutar este proyecto, se recomienda configurar un entorno virtual con **P
 3.  **Instalar las dependencias**:
     Una vez que el entorno esté activado, instala las bibliotecas necesarias con el siguiente comando:
     ```bash
-    pip install pandas matplotlib seaborn
+    pip install requirements.txt
+    ```
+    Si no reconoce el comando anterior comando usa el siguiente:
+        ```bash
+    python -m pip install -r requirements.txt
     ```
 
 ### Archivos de Datos Necesarios

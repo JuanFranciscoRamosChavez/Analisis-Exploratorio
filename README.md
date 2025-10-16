@@ -7,7 +7,7 @@ Este proyecto realiza un análisis exploratorio de datos (EDA) a partir de dos e
 ## Características
 
 * **Análisis Modular**: El proyecto está dividido en scripts que analizan cada encuesta de forma independiente.
-* **Análisis Combinado**: Un script dedicado fusiona los datos de las tres fuentes para descubrir insights más profundos y KPIs de diagnóstico.
+* **Análisis Combinado**: Un script dedicado fusiona los datos de las dos fuentes para descubrir insights más profundos y KPIs de diagnóstico.
 * **Organización Automática**: Las visualizaciones generadas se guardan automáticamente en carpetas separadas para mantener el orden y la claridad.
 * **Ejecución Simplificada**: Un único script maestro (`remoto.py`) orquesta la ejecución de todos los análisis en el orden correcto.
 
@@ -82,7 +82,7 @@ Para que los scripts funcionen, debes colocar los siguientes archivos CSV en la 
 
 1.  **Clona el repositorio** y navega a la carpeta del proyecto.
 2.  **Configura el entorno virtual** y activa las dependencias como se describe en la sección de Requisitos.
-3.  **Asegura los datos**: Verifica que los tres archivos CSV requeridos estén en la carpeta principal.
+3.  **Asegura los datos**: Verifica que los dos archivos CSV requeridos estén en la carpeta principal.
 4.  **Ejecuta el script maestro**: Con el entorno virtual activado, ejecuta el siguiente comando en tu terminal:
     ```bash
     python remoto.py
@@ -98,4 +98,6 @@ Después de ejecutar el script, se crearán tres nuevas carpetas en tu directori
 * `resultados_estilo_vida/`
 * `resultados_combinados/`
 
-Dentro de cada una, encontrarás las imágenes (`.png`) de los gráficos generados por el análisis correspondiente.#
+Dentro de cada una, encontrarás las imágenes (`.png`) de los gráficos generados por el análisis correspondiente.
+
+Aun asi en el repositorio se comparten las salidas de códigos, que son las carpetas que nos generan respectivamente cada código.

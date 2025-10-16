@@ -39,6 +39,8 @@ El flujo de trabajo está organizado de la siguiente manera:
 
 ## Requisitos Previos
 
+Compartimos el link de la versión de Python para la ejecución del código, para no llegar a tener incompatibilidades con el entorno virtual https://www.python.org/downloads/release/python-3119/ 
+
 Para ejecutar este proyecto, se recomienda configurar un entorno virtual con **Python 3.11**.
 
 1.  **Crear el entorno virtual**:

@@ -4,8 +4,7 @@ import seaborn as sns
 import re
 import os
 
-# --- 1. DEFINICIÓN DE RUTAS ---
-# (Se usará para guardar los gráficos)
+# ---  DEFINICIÓN DE RUTAS ---
 output_dir_graficos = '../resultados/'
 output_dir_datos = '../data/02_limpios/'
 
@@ -13,8 +12,7 @@ os.makedirs(output_dir_graficos, exist_ok=True)
 os.makedirs(output_dir_datos, exist_ok=True)
 print(f"Los gráficos se guardarán en: '{output_dir_graficos}'")
 
-# --- 2. CARGA DE DATOS LIMPIOS ---
-# (Nos saltamos toda la limpieza y cargamos los archivos listos)
+# ---  CARGA DE DATOS LIMPIOS ---
 path_bienestar = '../data/02_limpios/estilo_vida_limpio.csv'
 path_economia = '../data/02_limpios/economia_limpio.csv'
 
@@ -27,8 +25,7 @@ except FileNotFoundError:
     print("Asegúrate de ejecutar primero los scripts de análisis individuales.")
     exit()
 
-# --- 3. UNIÓN Y CÁLCULO DE KPIS ---
-# (Usamos tu método de 'merge' que es más robusto)
+# --- UNIÓN Y CÁLCULO DE KPIS ---
 df_completo = pd.merge(df_bienestar, df_economia, on='Numero_Cuenta', how='inner')
 print(f"Unión exitosa. Se encontraron {len(df_completo)} estudiantes en ambas encuestas.")
 
@@ -37,7 +34,7 @@ ruta_limpia = os.path.join(output_dir_datos, 'combinado_limpio.csv')
 df_completo.to_csv(ruta_limpia, index=False)
 print(f"\nDataFrame limpio guardado en: '{ruta_limpia}'")
 
-# --- 4. CONFIGURACIÓN DE GRÁFICOS ---
+# --- CONFIGURACIÓN DE GRÁFICOS ---
 sns.set_style("whitegrid")
 plt.rcParams['font.family'] = 'sans-serif'
 

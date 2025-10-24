@@ -67,7 +67,7 @@ Para ejecutar este proyecto, se recomienda configurar un entorno virtual con **P
     ```
 5. **Navega a la carpeta de análisis y ejecuta el script principal:**
     ```sh
-    cd analysis
+    cd analisis
     py remoto.py
     ```
 6. **Revisa los archivos `.csv` en `/data/02_limpios/` y los gráficos `.png` en `/resultados/`.**

@@ -18,10 +18,8 @@ print(f"Los datos limpios se guardarán en: '{output_dir_datos}'")
 
 # --- LIMPIEZA Y PREPARACIÓN DE DATOS ---
 
-# NOTA: Asegúrate de que tu archivo se llame 'encuesta_estilo_vida.csv'
 file_path = '../data/01_crudos/encuesta_estilo_vida.csv'
 try:
-    # Añadido encoding='utf-8-sig' por si hay caracteres especiales
     df_raw = pd.read_csv(file_path, encoding='utf-8-sig') 
     print("Archivo CSV original cargado exitosamente.")
 except FileNotFoundError:
